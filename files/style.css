@@ -1,0 +1,627 @@
+/* Reset the design system */
+html {
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Elements */
+h1 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  h1 {
+    margin-bottom: 0.3rem;
+  }
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00478f;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:active {
+  color: #002142;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+ul li {
+  margin-bottom: 0.85rem;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+/* Grid */
+.india-grid-container {
+  padding: 0 0.9375rem;
+  max-width: 62.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********** COMPONENTS **********/
+
+/* General */
+.india-component__wrapper {
+  display: block;
+  padding: 0;
+  margin: 0 0 2.5rem 0;
+}
+
+/* Header */
+.india-main-header {
+  background: #F8FAF9;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-main-header {
+    margin-bottom: 1rem;
+  }
+}
+
+.india-header-logo {
+  width: 153px;
+  margin: 1.25rem 1rem 1.25rem 0;
+}
+
+.india-main-header__logo-link {
+  display: block;
+  line-height: 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-header-logo {
+    width: 112px;
+    margin: 0.85rem 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-main-header__link {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .india-main-header__link {
+    margin-top: 1.8rem;
+  }
+}
+
+.india-main-header__link a,
+.india-main-header__link a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.india-main-header__link a:hover,
+.india-main-header__link a:focus {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.india-navigation {
+  background: #367a76;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.india-navigation__list {
+  font: 1rem "Raleway";
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.india-navigation__list--item {
+  float: left;
+  padding: 1rem;
+}
+
+.india-navigation__list--item:first-child {
+  padding-left: 0;
+}
+
+.india-navigation__list--item:hover,
+.india-navigation__list--item:focus {
+  background-color: #0a4a47;
+  cursor: pointer;
+}
+
+.india-navigation__list--item a {
+  color: white;
+  text-decoration: none;
+}
+
+.india-navigation__list--item a:hover,
+.india-navigation__list--item a:focus {
+  text-decoration: underline;
+}
+
+.india-navigation__list--active {
+  background-color: #0a4a47;
+}
+
+.india-site-nav__nav-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: auto;
+}
+
+/* Breadcrumbs */
+.india-breadcrumbs {
+  display: block;
+  margin: 0 0 1.25rem 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.india-breadcrumbs li {
+  float: left;
+  font-size: 0.9rem;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+
+.india-breadcrumbs li a {
+  text-decoration: underline;
+}
+
+.india-breadcrumbs > :nth-child(n + 1):before {
+  content: "";
+  background: url(india-icon-breadcrumb.svg) no-repeat;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  top: 0.1rem;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.india-breadcrumbs > *:first-child:before {
+  width: 0;
+  margin: 0;
+}
+
+/* Icons */
+.india-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.india-icon__warning {
+  display: block;
+  background: url(india-icon-warning.svg);
+  background-size: 100%;
+  float: left;
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.india-icon__menu {
+  display: block;
+  background: url(india-icon-menu.svg);
+  background-size: 100%;
+  margin-top: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.india-icon__back-blue {
+  display: inline-block;
+  background: url(india-icon-back-blue.svg);
+  background-size: 100%;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.india-icon__info {
+  display: block;
+  background: url(india-icon-information.svg);
+  background-size: 100%;
+  float: left;
+  width: 2rem;
+  height: 2em;
+}
+
+.india-icon__linkedin,
+.india-icon__twitter,
+.india-icon__facebook,
+.india-icon__email {
+  display: inline-block;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 3rem;
+}
+
+.india-icon__linkedin {
+  background: url(india-icon-linkedin.svg);
+  background-size: 100%;
+}
+
+.india-icon__facebook {
+  background: url(india-icon-facebook.svg);
+  background-size: 100%;
+}
+
+.india-icon__twitter {
+  background: url(india-icon-twitter.svg);
+  background-size: 100%;
+  height: 1rem;
+  width: 1.2rem;
+}
+
+.india-icon__email {
+  background: url(india-icon-email.svg);
+  background-size: 100%;
+  height: 1.1rem;
+  width: 1.38rem;
+}
+
+/* Question content */
+.india-question-content__wrapper {
+  margin: 2.5rem 0;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-question-content__wrapper {
+    margin: 1.5rem 0 2rem 0;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .india-question-content__wrapper {
+    max-width: 50rem;
+  }
+}
+
+.india-question-content__wrapper ul li {
+  font-size: 18px;
+}
+
+/* Buttons */
+.india-button--primary:hover,
+.india-button--primary:visited,
+.india-button--primary:active {
+  color: white;
+}
+
+.india-button--back,
+.india-button--back:visited {
+  color: #0066cc;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.india-button--back:hover,
+.india-button--back:active,
+.india-button--back:focus {
+  color: #00478f;
+  text-decoration: underline;
+}
+
+/* Typography */
+.india-large-text {
+  font: 1.4375rem "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.india-callout-text--large {
+  font-size: 1.375rem;
+  margin: 0.5rem 0;
+}
+
+.india-strong-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.india-intro-text {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 73em) {
+  .india-intro-text {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Text alignment */
+.india-text-center {
+  text-align: center;
+}
+
+.india-text-right {
+  text-align: right;
+}
+
+.india-text-left {
+  text-align: left;
+}
+
+/* List style */
+.india-list--inline {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.india-list--inline li {
+  display: block;
+  float: left;
+}
+
+/* Callouts */
+.india-callout, .india-callout--full-width {
+  background-color: #f2f2f2;
+  padding: 0.9375rem 2rem 0.9375rem 0.9375rem;
+  margin-bottom: 1.25rem;
+}
+
+.india-callout--full-width {
+  margin-bottom: 0;
+  position: relative;
+  top: -2rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-callout--full-width {
+    top: -1rem;
+  }
+}
+
+@media screen and (min-width: 73em) {
+  .india-callout {
+    max-width: 50rem;
+  }
+}
+
+.india-callout__lead {
+  font-size: 1.375rem;
+  margin: 0.5rem 0;
+}
+
+.india-callout__header {
+  font: 1.375rem "Open Sans", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
+  display: block;
+}
+
+.india-callout h2,
+.india-callout h3,
+.india-callout h4 {
+  margin-bottom: 0;
+}
+
+.india-callout h2, .india-callout h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.india-callout--alert {
+  background-color: #FCEFF0;
+  border-left: 4px solid #CD0000;
+}
+
+.india-callout--results-warning {
+  background-color: #F8E5C3;
+  border-left: 4px solid #FCAF17;
+}
+
+.india-callout--warning {
+  background-color: rgba(255, 212, 64, 0.2);
+  border-left: 4px solid #ffd440;
+}
+
+.india-callout--message {
+  background-color: #E5F0E9;
+  border-left: 4px solid #118847;
+}
+
+.india-callout--info {
+  background-color: #DEF2FA;
+  border-left: 4px solid #1080A6;
+}
+
+.india-callout--feedback {
+  border-left: 4px solid #3193CC;
+}
+
+.india-callout--feedback-title,
+.india-callout--warning-title,
+.india-callout--info-title {
+  font-weight: bold;
+  position: relative;
+  top: 0.2rem;
+}
+
+.india-callout--warning-title,
+.india-callout--info-title {
+  margin-left: 0.5rem;
+}
+
+.india-callout--info-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.india-callout--feedback-title {
+  font: 1.125rem "Raleway", "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.india-callout__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.india-callout__list li {
+  margin-bottom: 1rem;
+}
+
+.india-callout__list li a,
+.india-callout__list li a:visited {
+  text-decoration: underline;
+}
+
+.india-callout__list li a:hover,
+.india-callout__list li a:active {
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #ededed;
+  position: relative;
+  margin-top: 1em;
+  padding: 1em 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.india-footer__list {
+  font-size: 0.85rem;
+}
+
+.india-footer__list li {
+  margin: 0 0 0 1rem;
+}
+
+.india-footer__copyright {
+  display: block;
+  padding-left: 1rem;
+}
+
+/* Spacing */
+.india-margin--top {
+  margin-top: 1rem;
+}
+
+.india-margin--top-half {
+  margin-top: 0.5rem;
+}
+
+.india-margin--bottom {
+  margin-bottom: 1rem;
+}
+
+.india-margin--bottom-half {
+  margin-bottom: 0.5rem;
+}
+
+.india-margin--top-double {
+  margin-top: 2rem;
+}
+
+.india-margin--bottom-double {
+  margin-bottom: 2rem;
+}
+
+.india-margin--bottom-double-half {
+  margin-bottom: 2.5rem;
+}
+
+.india-padding--none {
+  padding: 0;
+}
+
+.india-margin--none {
+  margin: 0;
+}
+
+/* Visibility */
+.india-show-for-sr,
+.india-show-on-focus {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.india-show-on-focus:active,
+.india-show-on-focus:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .india-hide-for-small-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .india-show-for-small-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 73em) {
+  .india-hide-for-large-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 72.9375em) {
+  .india-show-for-large-only {
+    display: none;
+  }
+}
+
+/* Questions */
+#q1,
+#q2,
+#q3,
+#q4,
+#q5,
+#q6 {
+  display: none;
+}
+
+/* Results screens */
+.recs {
+  display: none;
+  margin-bottom: 2.5rem;
+}
+.recs h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.0313rem;
+}
